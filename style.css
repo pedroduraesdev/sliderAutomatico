@@ -1,0 +1,75 @@
+/* Reset de margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  overflow-x: hidden; /* Evita barras de rolagem horizontais */
+}
+
+/* Container do slider */
+.slide-container {
+  margin: 0 auto;
+  width: 70%; /* Ajuste conforme necessário */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slides */
+.slides {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+}
+
+/* Slide individual */
+.slide {
+  min-width: 100%;
+}
+
+/* Imagens dentro do slide */
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Controles de navegação */
+.slide-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1; /* Garante que os controles fiquem acima dos slides */
+}
+
+/* Botões de próxima e anterior */
+#next-btn,
+#prev-btn {
+  cursor: pointer;
+  background: transparent;
+  font-size: 15em; /* Usando unidade flexível */
+  border: none;
+  padding: 0.5em; /* Usando unidade flexível */
+  color: white;
+}
+
+#next-btn:focus,
+#prev-btn:focus {
+  outline: none;
+}
+
+/* Conteúdo adicional (por exemplo, títulos) sobre os slides */
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  font-size: 1.5em; /* Usando unidade flexível */
+  color: white;
+  z-index: 1; /* Garante que o conteúdo fique acima dos slides */
+}
