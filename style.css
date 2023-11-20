@@ -52,7 +52,7 @@ body {
 #prev-btn {
   cursor: pointer;
   background: transparent;
-  font-size: 15em; /* Usando unidade flexível */
+  font-size: 7em; /* Usando unidade flexível */
   border: none;
   padding: 0.5em; /* Usando unidade flexível */
   color: white;
